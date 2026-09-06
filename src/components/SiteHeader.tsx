@@ -16,9 +16,9 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "";
+    document.body.style.overflowY = open ? "hidden" : "";
     return () => {
-      document.body.style.overflow = "";
+      document.body.style.overflowY = "";
     };
   }, [open]);
 
@@ -88,7 +88,7 @@ export function SiteHeader() {
         onClick={(e) => {
           if (e.target === e.currentTarget) setOpen(false);
         }}
-        className={`fixed inset-0 z-[60] bg-primary/40 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${
+        className={`fixed inset-0 z-40 bg-primary/40 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${
           open ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
