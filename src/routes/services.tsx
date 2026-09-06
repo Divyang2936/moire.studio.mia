@@ -35,8 +35,8 @@ function ServicesPage() {
     <main className="w-full pt-20 bg-background">
       <div className="flex flex-col w-full">
         {/* Top Editorial Header & Hero Statement */}
-        <section className="relative w-full px-margin-mobile lg:px-margin-desktop pt-space-xl pb-space-2xl overflow-hidden">
-          <div className="max-w-[88rem] mx-auto">
+        <section className="relative w-full pt-space-xl pb-space-2xl overflow-hidden">
+          <div className="max-w-[88rem] mx-auto px-margin-mobile lg:px-margin-desktop">
             <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg mb-space-2xl">
               <div className="max-w-3xl">
                 <div className="inline-flex items-center gap-space-xs mb-space-sm">
