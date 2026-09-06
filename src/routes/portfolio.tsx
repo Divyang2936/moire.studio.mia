@@ -129,7 +129,7 @@ function PortfolioPage() {
                 <span className="w-8 h-px bg-secondary"></span>
                 <span className="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Monograph Vol. IV</span>
               </div>
-              <h1 className="font-display text-display lg:text-display text-primary tracking-tight leading-none mb-space-xs">
+              <h1 className="font-display text-display-mobile lg:text-display text-primary tracking-tight leading-none mb-space-xs">
                 Selected Works &amp; Sanctuaries
               </h1>
               <p className="font-body-lg text-body-lg text-on-surface-variant font-light leading-relaxed">
@@ -216,7 +216,7 @@ function PortfolioPage() {
                       {p.description}
                     </p>
                   </div>
-                  <div className="pt-space-xs flex items-center justify-between font-label-caps text-[0.7rem] uppercase text-on-surface-variant">
+                  <div className="pt-space-xs flex flex-wrap items-center justify-between gap-x-space-xs gap-y-space-2xs font-label-caps text-[0.7rem] uppercase text-on-surface-variant">
                     <span className="flex items-center gap-1">
                       <span className="material-symbols-outlined text-[0.9rem] text-secondary">location_on</span>
                       {p.location}

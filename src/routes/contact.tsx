@@ -71,7 +71,7 @@ function ContactPage() {
                 <span className="w-8 h-[1px] bg-secondary"></span>
                 <span className="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Inquiries &amp; Commissions</span>
               </div>
-              <h1 className="font-display text-display text-primary tracking-tight mb-space-sm">Begin a Conversation</h1>
+              <h1 className="font-display text-display-mobile lg:text-display text-primary tracking-tight mb-space-sm">Begin a Conversation</h1>
               <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
                 We accept a limited number of residential and commercial commissions each year to ensure uncompromising focus and artisanal depth.
               </p>
@@ -246,7 +246,7 @@ function ContactPage() {
                   <span className="font-label-caps text-label-caps uppercase text-secondary">Flagship Ateliers</span>
                   <div className="flex flex-col gap-space-md">
                     <div className="bg-surface-container-lowest p-space-md rounded shadow-sm">
-                      <div className="flex items-center justify-between">
+                      <div className="flex flex-wrap items-start justify-between gap-space-xs">
                         <h4 className="font-headline-sm text-headline-sm text-primary">New Delhi Studio</h4>
                         <span className="font-label-caps text-label-caps uppercase text-secondary bg-secondary-container px-space-2xs py-1 rounded">Primary Design Desk</span>
                       </div>
@@ -257,7 +257,7 @@ function ContactPage() {
                       </div>
                     </div>
                     <div className="bg-surface-container-lowest p-space-md rounded shadow-sm">
-                      <div className="flex items-center justify-between">
+                      <div className="flex flex-wrap items-start justify-between gap-space-xs">
                         <h4 className="font-headline-sm text-headline-sm text-primary">Mumbai Studio</h4>
                         <span className="font-label-caps text-label-caps uppercase text-secondary bg-secondary-container px-space-2xs py-1 rounded">Coastal Works</span>
                       </div>

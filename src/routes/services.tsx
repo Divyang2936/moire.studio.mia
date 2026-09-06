@@ -43,7 +43,7 @@ function ServicesPage() {
                   <span className="w-8 h-[1px] bg-secondary"></span>
                   <span className="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Atelier Expertise & Discipline</span>
                 </div>
-                <h1 className="font-display text-display tracking-tight text-primary leading-[1.05] mb-space-md">
+                <h1 className="font-display text-display-mobile lg:text-display tracking-tight text-primary leading-[1.05] mb-space-md">
                   Bespoke Services
                 </h1>
                 <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl font-light">

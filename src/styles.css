@@ -133,18 +133,32 @@
 }
 
 @layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     overscroll-behavior: none;
     background-color: var(--color-background);
     color: var(--color-on-surface);
     font-family: var(--font-body-md);
     -webkit-font-smoothing: antialiased;
+  }
+
+  img,
+  svg,
+  video {
+    max-width: 100%;
   }
 
   ::-webkit-scrollbar {

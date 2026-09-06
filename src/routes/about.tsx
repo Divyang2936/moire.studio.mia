@@ -70,7 +70,7 @@ function AboutPage() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent opacity-60"></div>
                   </div>
-                  <div className="pt-space-md flex justify-between items-baseline">
+                  <div className="pt-space-md flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-space-xs">
                     <div>
                       <p className="font-headline-sm text-headline-sm text-primary">Mia</p>
                       <p className="font-label-caps text-[0.7rem] uppercase tracking-widest text-secondary">Founder & Lead Interior Architect</p>
