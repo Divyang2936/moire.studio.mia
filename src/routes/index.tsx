@@ -57,7 +57,7 @@ function HomePage() {
       <div className="flex flex-col w-full">
         {/* Immersive Architectural Hero */}
 
-<section className="-mt-20 relative w-full min-h-[720px] lg:min-h-[942px] flex items-end justify-start overflow-hidden bg-primary">
+<section className="-mt-20 relative w-full min-h-[680px] sm:min-h-[720px] lg:min-h-[942px] flex items-end justify-start overflow-hidden bg-primary">
 
   {/* Background Image */}
   <div
@@ -77,7 +77,7 @@ function HomePage() {
 
     <motion.div
       animate="visible"
-      className="max-w-4xl flex flex-col items-start"
+      className="w-full max-w-4xl flex flex-col items-start"
       initial="hidden"
       transition={{ staggerChildren: 0.12, delayChildren: 0.2 }}
     >
@@ -86,7 +86,7 @@ function HomePage() {
       <motion.div
         variants={reveal}
         transition={revealTransition}
-        className="inline-flex items-center gap-space-xs px-space-sm py-space-3xs bg-surface-container-low/90 backdrop-blur-md text-secondary shadow-md mb-space-md"
+        className="inline-flex max-w-full items-center gap-space-xs px-space-sm py-space-3xs bg-surface-container-low/90 backdrop-blur-md text-secondary shadow-md mb-space-md"
       >
         <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
 
@@ -130,11 +130,11 @@ function HomePage() {
       <motion.div
         variants={reveal}
         transition={revealTransition}
-        className="flex flex-wrap items-center gap-space-md mb-space-xl"
+        className="w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm sm:gap-space-md mb-space-xl"
       >
 
         <Link
-          className="px-space-lg py-space-sm bg-secondary text-on-secondary font-label-caps text-label-caps uppercase tracking-widest shadow-xl transition-all duration-300 hover:bg-secondary-container hover:text-on-secondary-container flex items-center gap-space-xs group"
+          className="w-full sm:w-auto justify-center px-space-lg py-space-sm bg-secondary text-on-secondary font-label-caps text-label-caps uppercase tracking-widest shadow-xl transition-all duration-300 hover:bg-secondary-container hover:text-on-secondary-container flex items-center gap-space-xs group"
           to="/portfolio"
         >
           <span>View Our Work</span>
@@ -145,7 +145,7 @@ function HomePage() {
         </Link>
 
         <Link
-          className="px-space-lg py-space-sm bg-surface-container-lowest/15 backdrop-blur-sm text-on-primary font-label-caps text-label-caps uppercase tracking-widest transition-all duration-300 hover:bg-surface-container-lowest hover:text-primary"
+          className="w-full sm:w-auto justify-center px-space-lg py-space-sm bg-surface-container-lowest/15 backdrop-blur-sm text-on-primary font-label-caps text-label-caps uppercase tracking-widest transition-all duration-300 hover:bg-surface-container-lowest hover:text-primary"
           to="/contact"
         >
           Consult With Mia
@@ -157,36 +157,36 @@ function HomePage() {
       <motion.div
         variants={reveal}
         transition={revealTransition}
-        className="flex flex-wrap items-center gap-8 lg:gap-12 border-t border-on-primary/20 pt-6"
+        className="grid grid-cols-3 gap-3 sm:flex sm:flex-wrap sm:items-center sm:gap-8 lg:gap-12 border-t border-on-primary/20 pt-6 w-full sm:w-auto"
       >
 
         <div>
           <span className="block font-display text-2xl lg:text-3xl text-on-primary">
             12+
           </span>
-          <span className="font-label-caps text-[0.65rem] uppercase tracking-widest text-on-primary/60">
+            <span className="font-label-caps text-[0.6rem] sm:text-[0.65rem] uppercase tracking-widest text-on-primary/60 leading-tight">
             Years of Craft
           </span>
         </div>
 
-        <div className="w-px h-10 bg-on-primary/20"></div>
+        <div className="hidden sm:block w-px h-10 bg-on-primary/20"></div>
 
         <div>
           <span className="block font-display text-2xl lg:text-3xl text-on-primary">
             80+
           </span>
-          <span className="font-label-caps text-[0.65rem] uppercase tracking-widest text-on-primary/60">
+            <span className="font-label-caps text-[0.6rem] sm:text-[0.65rem] uppercase tracking-widest text-on-primary/60 leading-tight">
             Spaces Designed
           </span>
         </div>
 
-        <div className="w-px h-10 bg-on-primary/20"></div>
+        <div className="hidden sm:block w-px h-10 bg-on-primary/20"></div>
 
         <div>
           <span className="block font-display text-2xl lg:text-3xl text-on-primary">
             06
           </span>
-          <span className="font-label-caps text-[0.65rem] uppercase tracking-widest text-on-primary/60">
+            <span className="font-label-caps text-[0.6rem] sm:text-[0.65rem] uppercase tracking-widest text-on-primary/60 leading-tight">
             Cities
           </span>
         </div>

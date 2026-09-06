@@ -22,7 +22,7 @@ export function SiteFooter() {
               contemporary minimalism. Curating bespoke spatial narratives for private
               residences and boutique retreats.
             </p>
-            <div className="flex items-center gap-space-md pt-space-xs">
+            <div className="flex flex-wrap items-center gap-x-space-md gap-y-space-2xs pt-space-xs">
               <a
                 className="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-secondary transition-colors"
                 href="#"
@@ -115,11 +115,11 @@ export function SiteFooter() {
             </form>
           </div>
         </div>
-        <div className="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant">
-          <p className="font-label-caps text-label-caps uppercase text-[0.7rem]">
+        <div className="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant text-center sm:text-left">
+          <p className="font-label-caps text-label-caps uppercase text-[0.7rem] max-w-md">
             © 2025 Moire Studio Mia Private Limited. All rights reserved.
           </p>
-          <div className="flex items-center gap-space-md font-label-caps text-label-caps uppercase text-[0.7rem]">
+          <div className="flex flex-wrap justify-center sm:justify-end gap-x-space-md gap-y-space-2xs font-label-caps text-label-caps uppercase text-[0.7rem]">
             <a className="hover:text-primary transition-colors" href="#">
               Privacy Statement
             </a>

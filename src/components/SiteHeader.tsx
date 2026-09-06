@@ -1,8 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 
-const LOGO_SRC =
-  "https://lh3.googleusercontent.com/aida/AEtjO1XJTrDxtHY09zFA8ieWpLv_c8fis0r27iXofHxzLNAJdI6ZVWCFSgiZwNQurNdlINYjk8I47pHh21CD_ukOpCpuXeGIdlFqsv2hIq3E92n0AhcHps-N73DB4UNYRNE_H8yD1Km2f-eVg0cx9yzHqzw-IHUguwoLgxvSCh2ZYrTHAZLfiY110LzltILwiuBZ_CrSB0UADAR7rgA7GfR41SMA5EQfTV5ni4vELdbeYUnKXv0_wX4pjPezAPs";
 const AVATAR_SRC =
   "https://lh3.googleusercontent.com/aida-public/AB6AXuDUCd5phSsCcgJMyiPQfsKcX9TGxV0f6pZt1ABA3DOuB6rResBzpT_8gxhEBzwPFwx89lhjJxh2OkWFsBieYEtdG7ph3depuRWe5y6Y8YAuDCqf3_5z88iQnvDfyCos_aOC35XRT4V_FXL5SvbvNT2VXBWwoW6fpXEwRCWGinpIlH8Tv0nntmHlasPWPehZmITw3JmtZAIgPicZMW2jkW-hyv1KIFt8WObm0lzeIn5JefqXV73ya7ZZ";
 
@@ -27,19 +25,21 @@ export function SiteHeader() {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-md shadow-[0_1px_8px_rgba(44,44,44,0.03)] transition-all duration-300">
-        <div className="max-w-[88rem] mx-auto px-margin-mobile lg:px-margin-desktop">
-          <div className="h-20 flex items-center justify-between gap-space-md">
-            <div className="flex items-center gap-space-sm">
-              <img
-                alt="Moire Studio Mia Logo"
-                className="h-8 w-auto object-contain"
-                src={LOGO_SRC}
-              />
+        <div className="max-w-max-content-width mx-auto px-space-sm sm:px-margin-mobile lg:px-margin-desktop">
+          <div className="h-16 sm:h-20 flex items-center justify-between gap-space-xs sm:gap-space-md">
+            <div className="min-w-0 flex items-center gap-space-xs sm:gap-space-sm">
+              <span
+                aria-label="Moire Studio Mia Logo"
+                className="flex h-8 w-8 shrink-0 items-center justify-center border border-secondary font-headline-sm text-[1.15rem] leading-none text-secondary"
+                role="img"
+              >
+                M
+              </span>
               <Link to="/" className="flex flex-col text-left">
-                <span className="font-headline-sm text-headline-sm tracking-tight text-primary leading-none">
+                <span className="font-headline-sm text-[1rem] sm:text-headline-sm tracking-tight text-primary leading-none whitespace-nowrap">
                   Moire Studio Mia
                 </span>
-                <span className="font-label-caps uppercase text-secondary tracking-widest text-[0.65rem] mt-1">
+                <span className="hidden sm:block font-label-caps uppercase text-secondary tracking-widest text-[0.65rem] mt-1">
                   Architectural Curation
                 </span>
               </Link>
@@ -59,19 +59,15 @@ export function SiteHeader() {
                 </Link>
               ))}
             </nav>
-            <div className="flex items-center gap-space-md">
+            <div className="shrink-0 flex items-center gap-space-xs sm:gap-space-md">
               <Link
                 to="/contact"
                 className="hidden sm:inline-flex items-center justify-center px-space-md py-space-2xs border border-secondary text-secondary hover:bg-secondary hover:text-on-secondary font-label-caps text-label-caps uppercase transition-all duration-300"
               >
                 Inquire
               </Link>
-              <div className="flex items-center pl-space-xs">
-                <img
-                  alt="Profile"
-                  className="w-8 h-8 rounded-full object-cover"
-                  src={AVATAR_SRC}
-                />
+              <div className="hidden sm:flex items-center pl-space-xs">
+                <img alt="Profile" className="w-8 h-8 rounded-full object-cover" src={AVATAR_SRC} />
               </div>
               <button
                 aria-label="Toggle Navigation Menu"
@@ -79,7 +75,7 @@ export function SiteHeader() {
                 aria-expanded={open}
                 onClick={() => setOpen(true)}
                 type="button"
-                className="lg:hidden p-space-2xs text-primary hover:text-secondary transition-colors focus:outline-none"
+                className="lg:hidden flex h-10 w-10 shrink-0 items-center justify-center p-space-2xs text-primary hover:text-secondary transition-colors focus:outline-none"
               >
                 <span className="material-symbols-outlined text-[1.75rem]">menu</span>
               </button>
@@ -104,9 +100,7 @@ export function SiteHeader() {
           }`}
         >
           <div className="flex items-center justify-between pb-space-md">
-            <span className="font-headline-sm text-headline-sm text-primary">
-              Moire Studio Mia
-            </span>
+            <span className="font-headline-sm text-headline-sm text-primary">Moire Studio Mia</span>
             <button
               aria-label="Close Menu"
               onClick={() => setOpen(false)}
